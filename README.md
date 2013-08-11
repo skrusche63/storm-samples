@@ -13,3 +13,7 @@ every incoming message will be processed.
 
 Storm also offers features such as fault tolerance and distributed computation, which make it suitable for processing 
 huge amounts of data on different machines.
+
+### FileSpout
+This spout operates on a single text file and emits each line for further processing. It is a simple example of how to acquire 
+data for a storm network (or topology).
