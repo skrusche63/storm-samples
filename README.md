@@ -14,6 +14,13 @@ every incoming message will be processed.
 Storm also offers features such as fault tolerance and distributed computation, which make it suitable for processing 
 huge amounts of data on different machines.
 
+### Natural Language Processing
+This project references the Apache OpenNLP library for the processing of natural language text. Actually it supports
+* Sentence Segmentation
+* Part of Speech Tagging
+
+_to be continued_
+
 ### FileSpout
-This spout operates on a single text file and emits each line for further processing. It is a simple example of how to acquire 
-data for a storm network (or topology).
+This spout operates on a single text file and emits each line for further processing. It is a simple example of how 
+to acquire data for a storm network (or topology).
