@@ -24,3 +24,14 @@ _to be continued_
 ### FileSpout
 This spout operates on a single text file and emits each line for further processing. It is a simple example of how 
 to acquire data for a storm network (or topology).
+
+_to be continued_
+
+### MySQLBolt
+
+_to be continued_
+
+### POSTaggerBolt
+
+_to be continued_
+
