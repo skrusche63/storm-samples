@@ -52,8 +52,8 @@ public class POSTagger {
 		init(modelFile, null);
 	}
 	
-	public static void init(String modelFile, HashSet<String> excludedPOS) {
-		instance = new POSTagger(modelFile, excludedPOS);
+	public static void init(String modelFile, HashSet<String> excludedTags) {
+		instance = new POSTagger(modelFile, excludedTags);
 	}
 	
 	public static POSTagger getInstance() {
