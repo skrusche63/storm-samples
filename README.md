@@ -21,6 +21,12 @@ This project references the Apache OpenNLP library for the processing of natural
 
 _to be continued_
 
+### Named Entity Recognition
+This project uses the GATE text mining system for real-time (supervised) Named Entity Recognition. To this end a specific 
+NERBolt is defined that connects to the GATE system through a socket connection.
+
+_to be continued_
+
 ### FileSpout
 This spout operates on a single text file and emits each line for further processing. It is a simple example of how 
 to acquire data for a storm network (or topology).
