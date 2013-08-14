@@ -41,5 +41,8 @@ _to be continued_
 
 ### NERBolt
 This bolt uses the GATE text mining system for Named Entity Recognition. GATE is invoked by using a socket connetion to 
-send raw text and receive XML documents from GATE describing the entities found.
+send raw text and receive XML documents from GATE describing the entities found. The image below illustrates the idea behind 
+this bolt.
+
+![NER Bolt Overview](https://raw.github.com/skrusche63/storm-samples/master/src/main/resources/NERBolt.png)
 
