@@ -32,6 +32,10 @@ _to be continued_
 _to be continued_
 
 ### POSTaggerBolt
+This bolt uses the Apache Open NLP library to annotate a text line (sentence) with part of speech tags. The result is a 
+list of TaggedWords describing a word associated with its detected POS tag.
+
+The bolt may be configured by a set of POS tags to be excluded from the result list.
 
 _to be continued_
 
