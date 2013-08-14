@@ -3,8 +3,10 @@ storm-samples
 
 This repository holds a collection of storm topologies, we have made experience with at 
 [Dr. Krusche & Partner](http://www.dr-kruscheundpartner.de). We share the respective Spout & Bolt 
-definitions with the hope that they are useful.
+definitions with the hope that they are useful. Actually our main interest is in real-time text analysis using libraries 
+such as Storm and Spark.
 
+**Storm**
 Storm is an open source real-time computation framework, which was developed at Twitter and is sometimes referred 
 to as "real-time Hadoop." Whereas Hadoop relies on batch processing, Storm is a real-time, distributed, fault-tolerant system. 
 
@@ -13,6 +15,11 @@ every incoming message will be processed.
 
 Storm also offers features such as fault tolerance and distributed computation, which make it suitable for processing 
 huge amounts of data on different machines.
+
+**Shark**
+Spark is an open source cluster computing system that aims to make data analytics fast — both fast to run and fast to 
+write. To this end, Spark provides primitives for in-memory cluster computing. A job can load data into memory and 
+query it repeatedly much more quickly than with disk-based systems like Hadoop MapReduce.
 
 ### Natural Language Processing
 This project references the Apache OpenNLP library for the processing of natural language text. Actually it supports
