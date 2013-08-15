@@ -44,6 +44,14 @@ to acquire data for a storm network (or topology).
 
 _to be continued_
 
+### ZMQPullSpout
+This spout retrieves messages from a ZeroMQ PUSH server. We use the ZMQPullSpout in combination with a web server 
+(which is the mentioned PUSH server) to process postings of a certain forum in real-time. The main objective associated 
+with a forum entry is Named Entity Recognition to detect referenced electronic products.
+
+
+_to be continued_
+
 ### MySQLBolt
 
 _to be continued_
