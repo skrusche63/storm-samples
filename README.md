@@ -30,19 +30,23 @@ This project references the Apache OpenNLP library for the processing of natural
 * Sentence Segmentation
 * Part of Speech Tagging
 
-_to be continued_
 
 ### Named Entity Recognition
 This project uses the GATE text mining system for real-time (supervised) Named Entity Recognition. To this end a specific 
 NERBolt is defined that connects to the GATE system through a socket connection.
 
-_to be continued_
+
+### Real-time Text Analysis
+The spouts and bolts defined in this project may be used to build a real-time ETL pipeline, starting with a text message and 
+ending up with a list of extracted people, locations, products or more. The main focus is on the implementation of a distributed 
+pipeline (based on Storm) in combination with proven text analysis libraries and systems.
+
 
 ### FileSpout
 This spout operates on a single text file and emits each line for further processing. It is a simple example of how 
-to acquire data for a storm network (or topology).
+to acquire data for a storm network (or topology). A use case may be to acquire the content of a log file and do some 
+text analysis.
 
-_to be continued_
 
 ### ZMQPullSpout
 This spout retrieves messages from a ZeroMQ PUSH server. We use the ZMQPullSpout in combination with a web server 
@@ -51,11 +55,18 @@ with a forum entry is Named Entity Recognition to detect referenced electronic p
 
 ![ZMQPullSpout](https://raw.github.com/skrusche63/storm-samples/master/src/main/resources/ZMQPullSpout.png)
 
-_to be continued_
 
 ### MySQLBolt
+This bolt may be used to persist the result of a text analysis pipeline in a MySQL database. Actually the use of a single table 
+with a custom column structure is supported.
 
-_to be continued_
+
+### SentenceDetectorBolt
+This bolt uses the Apache Open NLP library to segment a text message into a list of sentences. These detected sentences may be 
+further processed by the POSTaggerBolt to determine e.g. nouns or names.
+
+The SentenceDetectorBolt may be used as part of a real-time text analysis topology.
+
 
 ### POSTaggerBolt
 This bolt uses the Apache Open NLP library to annotate a text line (sentence) with part of speech tags. The result is a 
@@ -63,7 +74,6 @@ list of TaggedWords describing a word associated with its detected POS tag.
 
 The bolt may be configured by a set of POS tags to be excluded from the result list.
 
-_to be continued_
 
 ### NERBolt
 This bolt uses the GATE text mining system for Named Entity Recognition. GATE is invoked by using a socket connetion to 
